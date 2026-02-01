@@ -1,0 +1,14 @@
+# GUI Framework
+PyQt6
+PyQt6-WebEngine
+
+# Networking and API
+requests
+
+# Forensic and Metadata Analysis
+exifread
+python-magic
+
+# Geospatial and Mapping
+folium
+geopy
