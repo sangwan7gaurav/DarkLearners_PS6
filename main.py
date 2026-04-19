@@ -8,30 +8,25 @@ import shutil
 import time
 import tempfile
 import magic
-import random       # <--- Added for Tab 6
+import random       
 import webbrowser
 
-# -----------------------------------------------------------------------------
-# CONFIGURATION & IMPORTS
-# -----------------------------------------------------------------------------
-# GET A FREE KEY AT: https://www.virustotal.com/gui/join-us
-VT_API_KEY = "61f033aaa13db3074c1b5c5109b9569b60b644e55be809b9059781aa0b1f8197" 
+
+VT_API_KEY = " " 
 
 try:
     import requests
-    # --- EXISTING IMPORTS ---
     from PyQt6.QtWidgets import (QApplication, QWidget, QMainWindow, QPushButton, QTextEdit,
                                  QVBoxLayout, QHBoxLayout, QTabWidget, QLabel, QTableWidget, 
                                  QTableWidgetItem, QHeaderView, QProgressBar, QListWidget,
                                  QSplitter, QMessageBox, QFrame, QFileDialog, QComboBox, QGridLayout)
-    from PyQt6.QtCore import Qt, QThread, pyqtSignal, QUrl  # <--- Added QUrl
+    from PyQt6.QtCore import Qt, QThread, pyqtSignal, QUrl  
     from PyQt6.QtGui import QColor, QFont, QPalette
 
-    # --- NEW IMPORTS REQUIRED FOR TAB 6 ---
-    from PyQt6.QtWebEngineWidgets import QWebEngineView     # <--- Fixes NameError
-    import folium                                           # <--- Required for Map
-    import exifread                                         # <--- Required for GPS Extraction
-    from geopy.geocoders import Nominatim                   # <--- Required for City names
+    from PyQt6.QtWebEngineWidgets import QWebEngineView    
+    import folium                                           
+    import exifread                                         
+    from geopy.geocoders import Nominatim               
 
 except ImportError as e:
     print("CRITICAL: Missing dependencies.")
