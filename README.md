@@ -1,4 +1,3 @@
-##ANDROID forensics analysis tool(Non-Root)
 
 A Python-based **ANDROID forensics analysis tool(Non-Root)** built using **PyQt6**.  
 Designed for **non-root Android devices**, this tool performs forensic-safe
