@@ -1,6 +1,6 @@
-# DarkLearners_PS6
+##ANDROID forensics analysis tool(Non-Root)
 
-A Python-based **mobile forensics analysis tool** built using **PyQt6**.  
+A Python-based **ANDROID forensics analysis tool(Non-Root)** built using **PyQt6**.  
 Designed for **non-root Android devices**, this tool performs forensic-safe
 data extraction and analysis using ADB and open-source intelligence techniques.
 
